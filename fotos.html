@@ -20,6 +20,8 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -57,14 +59,6 @@
 			<div class="colorlib-table-cell js-fullheight">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="form-group">
-							<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
-							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
 						<ul>
 							<li><a href="index.html">Início</a></li>
 							<li><a href="materias.html">Matérias</a></li>
@@ -75,17 +69,17 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="head-title">Works</h2>
-						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
+						<h2 class="head-title">Glossário</h2>
+						<a href="images/1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/1.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
+						<a href="images/2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/2.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
+						<a href="images/3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/3.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
+						<a href="images/4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/4.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
 					</div>
@@ -108,140 +102,150 @@
 			</div>
 		</header>
 		<div id="colorlib-work">
-			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">Works</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Portfolio</span>
-						<h2>Done Projesscts</h2>
-					</div>
-				</div>
+			<style>
+				#colorlib-work {
+					padding: 50px 0;
+				}
+		
+				.work-entry {
+					position: relative;
+					overflow: hidden;
+					margin-bottom: 30px; /* Espaçamento entre as imagens */
+					cursor: pointer; /* Para indicar que a imagem pode ser clicada */
+					width: calc(33.333% - 20px); /* Tamanho para 3 colunas */
+					display: inline-block; /* Para criar um layout de mosaico */
+					margin: 10px; /* Margem ao redor de cada item */
+				}
+		
+				.work-img {
+					display: block;
+					width: 100%;
+					height: 200px; /* Altura fixa para todas as imagens */
+					background-size: cover;
+					background-position: center;
+				}
+		
+				.desc {
+					text-align: center; /* Centraliza a descrição */
+					padding: 10px 0;
+				}
+		
+				h2 {
+					font-size: 16px; /* Ajuste o tamanho do título da obra */
+					margin: 10px 0; /* Margem ao redor do título */
+				}
+		
+				@media (max-width: 768px) {
+					.work-entry {
+						width: calc(50% - 20px); /* 2 colunas em telas menores */
+					}
+				}
+		
+				@media (max-width: 480px) {
+					.work-entry {
+						width: 100%; /* 1 coluna em telas muito pequenas */
+					}
+				}
+			</style>
+		
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work-single.html" class="work-img" style="background-image: url(images/work-1.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Pursuing Best</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="bold">Fotografias</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+					<span>Trabalhos realizados</span>
+					<h2>Portfolio</h2>
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="work-entry animate-box">
+						<a href="images/1.jpg" data-lightbox="portfolio" class="work-img" style="background-image: url(images/1.jpg);">
+							<div class="display-t">
+								<div class="work-name">
+									<h2>Pursuing Best</h2>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work-single.html" class="work-img" style="background-image: url(images/work-2.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Coordinates</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View Details</a></p>
+	
+					<div class="work-entry animate-box">
+						<a href="images/2.jpg" data-lightbox="portfolio" class="work-img" style="background-image: url(images/2.jpg);">
+							<div class="display-t">
+								<div class="work-name">
+									<h2>Coordinates</h2>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work-single.html" class="work-img" style="background-image: url(images/work-3.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Cristall</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+	
+					<div class="work-entry animate-box">
+						<a href="images/3.jpg" data-lightbox="portfolio" class="work-img" style="background-image: url(images/3.jpg);">
+							<div class="display-t">
+								<div class="work-name">
+									<h2>Cristall</h2>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work-single.html" class="work-img" style="background-image: url(images/work-4.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Black</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+	
+					<div class="work-entry animate-box">
+						<a href="images/4.jpg" data-lightbox="portfolio" class="work-img" style="background-image: url(images/4.jpg);">
+							<div class="display-t">
+								<div class="work-name">
+									<h2>Black</h2>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work-single.html" class="work-img" style="background-image: url(images/work-5.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Black</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+	
+					<div class="work-entry animate-box">
+						<a href="images/5.jpg" data-lightbox="portfolio" class="work-img" style="background-image: url(images/5.jpg);">
+							<div class="display-t">
+								<div class="work-name">
+									<h2>Black</h2>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work-single.html" class="work-img" style="background-image: url(images/work-6.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Black</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+	
+					<div class="work-entry animate-box">
+						<a href="images/6.jpg" data-lightbox="portfolio" class="work-img" style="background-image: url(images/6.jpg);">
+							<div class="display-t">
+								<div class="work-name">
+									<h2>Black</h2>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work-single.html" class="work-img" style="background-image: url(images/work-7.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Indice</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+	
+					<div class="work-entry animate-box">
+						<a href="images/7.jpg" data-lightbox="portfolio" class="work-img" style="background-image: url(images/7.jpg);">
+							<div class="display-t">
+								<div class="work-name">
+									<h2>Indice</h2>
 								</div>
 							</div>
-						</div>
+						</a>
+					</div>
+
+					<div class="work-entry animate-box">
+						<a href="images/8.jpg" data-lightbox="portfolio" class="work-img" style="background-image: url(images/8.jpg);">
+							<div class="display-t">
+								<div class="work-name">
+									<h2>Indice</h2>
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		</div>
+		
 
 		<footer>
 			<div id="footer">
@@ -252,7 +256,7 @@
 								<div class="col-md-10">
 									<h2>Vamos conversar?</h2>
 									<p>Entre em contato comigo para saber mais sobre o meu trabalho e como posso te ajudar.</p>
-									<p><a href="#">marina.s.cintra@hotmail.com</a></p>
+									<p><a href="mailto:">marina.s.cintra@hotmail.com</a></p>
 									<p class="colorlib-social-icons">
 									<a href="https://www.facebook.com/marina.cintra.735/"><i class="icon-facebook4"></i></a>
 									<a href="https://www.linkedin.com/in/marina-cintra-4023ba1b3/"><i class="icon-linkedin4"></i></a>
@@ -266,7 +270,7 @@
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<p>
-								&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://ww.guatodigital.com" target="_blank">Guato Digital</a>
+								&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://www.guatodigital.com" target="_blank">Guato Digital</a>
 							</p>
 						</div>
 					</div>
@@ -292,6 +296,8 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 
 	</body>
 </html>
